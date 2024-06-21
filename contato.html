@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato Pessoal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Pixelify+Sans:wght@400..700&family=Shadows+Into+Light&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; 
+        }
+
+        .menu-item {
+            flex: 1 1 300px; 
+            max-width: 300px; 
+            position: relative; /* Adicionado para posicionar o link "Ver detalhes" */
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="cacau.jpg" id="cabeca">
+    </header>
+
+    <div class="container">
+        <!-- Informações de contato -->
+        <div class="menu-item">
+            <img src="perfil.jpg" alt="Café Latte">
+            <h3>Informações de Contato</h3>
+            <p>Endereço: Av. Exemplo, 123</p>
+            <p>Telefone: (00) 1234-5678</p>
+            <p>Email: contato@example.com</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        function exibirMensagem(event) {
+            event.preventDefault();
+            var mensagemDiv = event.target.nextElementSibling;
+            mensagemDiv.style.display = mensagemDiv.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
