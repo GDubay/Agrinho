@@ -38,10 +38,11 @@ nav ul li a {
 }
 
 .menu-item {
-    border: 1px solid #ccc;
+    border: 1px solid #3C7553;
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
+    box-shadow:  0 0 10px #3C7553;
 }
 
 .menu-item img {
@@ -92,4 +93,9 @@ section {
   .mensagem {
     display: none;
     transition: display 0.3s ease-in-out;
+}
+footer img{
+    width: 130px;
+    border: 3px solid #ccc;
+    box-shadow:  0 0 10px #ccc;
 }
